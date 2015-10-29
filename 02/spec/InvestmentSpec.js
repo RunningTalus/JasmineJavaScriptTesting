@@ -18,4 +18,12 @@ describe("Investment", function() {
         expect(investment.shares).toEqual(100);
     });
 
+    it("should have the share payed price", function() {
+       expect(investment.sharePrice).toEqual(20);
+    });
+
+    it("should have a cost", function(){
+        expect(investment.cost).toEqual(2000);
+    });
+
 });
