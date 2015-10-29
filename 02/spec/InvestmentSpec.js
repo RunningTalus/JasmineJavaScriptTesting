@@ -6,7 +6,8 @@ describe("Investment", function() {
         stock = new Stock();
         investment = new Investment({
             stock: stock,
-            shares: 100
+            shares: 100,
+            sharePrice: 20
         });
     });
 
