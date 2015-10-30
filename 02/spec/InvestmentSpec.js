@@ -27,4 +27,12 @@ describe("Investment", function() {
         expect(investment.cost).toEqual(2000);
     });
 
+    describe("when its stock share price valorizes", function(){
+        beforeEach(function(){
+            stock.sharePrice = 40;
+        });
+    });
+
+
+
 });
