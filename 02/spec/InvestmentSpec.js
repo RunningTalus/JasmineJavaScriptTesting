@@ -36,12 +36,19 @@ describe( "Investment", function() {
            expect( investment.roi() ).toEqual( 1 );
         });
 
-
         it("should be a good investment", function() {
             expect( investment.isGood() ).toBeTruthy();
         });
     });
 
+    describe("when its stock share price devalorizes", function() {
+       beforeEach( function() {
+           stock.sharePrice = 0;
+       });
 
+        it("should be a bad investment", function() {
+            expect( investment ).not.toBeAGoodInvestment();
+        });
+    });
 
 });

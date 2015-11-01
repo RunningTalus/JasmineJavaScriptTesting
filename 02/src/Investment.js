@@ -10,6 +10,10 @@ Investment.prototype.roi = function() {
     return (this.stock.sharePrice - this.sharePrice) / this.sharePrice;
 };
 
-Investment.prototype.isGood = function(first_argument) {
-    return this.roi() > 0;
+//Investment.prototype.isGood = function(first_argument) {
+//    return this.roi() > 0;
+//};
+
+Investment.prototype.isGood = function() { // Make the spec fail
+    return true;
 };
