@@ -36,8 +36,9 @@ describe( "Investment", function() {
            expect( investment.roi() ).toEqual( 1 );
         });
 
+
         it("should be a good investment", function() {
-            expect( investment ).toBeAGoodInvestment();
+            expect( investment.isGood() ).toBeTruthy();
         });
     });
 
