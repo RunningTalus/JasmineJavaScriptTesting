@@ -24,7 +24,9 @@ describe( "Investment", function() {
     });
 
     it("should have a cost", function() {
-        expect( investment.cost ).toEqual( 2000 );
+        toEqual: function(expectedValue) {
+            return this.actual === expectedValue;
+        }
     });
 
     describe("when its stock share price valorizes", function() {
