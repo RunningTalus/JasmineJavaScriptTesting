@@ -79,4 +79,23 @@ describe("Jasmine Built-in matchers", function() {
         });
     });
 
+    describe("toBeTruthy", function() {
+        it("should pass the true boolean value", function() {
+            expect(true).toBeTruthy();
+        });
+
+        it("should pass any number different than +0 and -0", function() {
+            expect(1).toBeTruthy();
+        });
+
+        it("should pass any non empty string", function() {
+            expect("a").toBeTruthy();
+        });
+
+        it("should pass any object (including an array)", function() {
+            expect([]).toBeTruthy();
+            expect({}).toBeTruthy();
+        });
+    });
+
 });
