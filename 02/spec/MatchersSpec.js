@@ -98,4 +98,22 @@ describe("Jasmine Built-in matchers", function() {
         });
     });
 
+    describe("toBeNan", function() {
+        it("should pass NaN", function() {
+            expect(NaN).toBeNaN();
+        });
+    });
+
+    describe("toBeNull", function() {
+       it("should pass null", function() {
+          expect(null).toBeNull();
+       });
+    });
+
+    describe("toBeUndefined", function() {
+        it("should pass undefined", function() {
+            expect(undefined).toBeUndefined();
+        });
+    });
+
 });
