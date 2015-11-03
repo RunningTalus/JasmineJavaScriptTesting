@@ -53,4 +53,30 @@ describe("Jasmine Built-in matchers", function() {
         });
     });
 
+    describe("toBeFalsy", function () {
+        it("should pass undefined", function() {
+            expect(undefined).toBeFalsy();
+        });
+
+        it("should pass null", function() {
+            expect(null).toBeFalsy();
+        });
+
+        it("should pass NaN", function() {
+            expect(NaN).toBeFalsy();
+        });
+
+        it("should pass the false boolean value", function() {
+            expect(false).toBeFalsy();
+        });
+
+        it("should pass the number 0", function() {
+            expect(0).toBeFalsy();
+        });
+
+        it("should pass an empty string", function() {
+            expect("").toBeFalsy();
+        });
+    });
+
 });
