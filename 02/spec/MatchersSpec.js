@@ -132,4 +132,10 @@ describe("Jasmine Built-in matchers", function() {
         });
     });
 
+    describe("toMatch", function() {
+       it("should pass a matching string", function() {
+          expect("This silly example string").toMatch(/This(.+)string/);
+       });
+    });
+
 });
