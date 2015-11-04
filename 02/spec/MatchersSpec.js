@@ -138,4 +138,16 @@ describe("Jasmine Built-in matchers", function() {
        });
     });
 
+    describe("toBeLessThan", function() {
+       it("should pass when the actual is less than expected", function() {
+           expect(1).toBeLessThan(2);
+       });
+    });
+
+    describe("toBeGreaterThan", function() {
+       it("should pass when the actual is greater than expected", function() {
+          expect(2).toBeGreaterThan(1);
+       });
+    });
+
 });
