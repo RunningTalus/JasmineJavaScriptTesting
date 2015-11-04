@@ -123,4 +123,13 @@ describe("Jasmine Built-in matchers", function() {
         });
     });
 
+    describe("toContain", function() {
+        it("should pass if a string contains another string", function() {
+            expect("This sample testing string").toContain("sample");
+        });
+        it("should pass if an array contains an element", function(){
+            expect([1,2,3]).toContain(2);
+        });
+    });
+
 });
