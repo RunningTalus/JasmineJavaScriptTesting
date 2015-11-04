@@ -150,4 +150,12 @@ describe("Jasmine Built-in matchers", function() {
        });
     });
 
+    describe("toThrow", function() {
+       it("should pass when the exception is thrown", function() {
+          expect(function() {
+              throw("Some exception");
+          }).toThrow("Some exception");
+       });
+    });
+
 });
