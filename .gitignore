@@ -2,6 +2,7 @@
 ### Yeoman template
 node_modules/
 02/bower_components/
+03/bower_components/
 *.log
 
 build/
