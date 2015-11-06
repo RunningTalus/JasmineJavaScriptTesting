@@ -11,5 +11,5 @@ beforeEach(function() {
             return investment.isGood();
         }
     });
-
 });
+jasmine.getFixtures().fixturesPath = 'spec/fixtures';
